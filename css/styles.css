@@ -7,6 +7,7 @@
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+  --bg-dark-blue: hsl(220, 13%, 27%);
 }
 * {
   margin: 0;
@@ -62,7 +63,7 @@ ul {
 }
 
 .box-logo {
-  background-color: var(--very-dark-blue);
+  background-color: var(--bg-dark-blue);
   padding: 3%;
   border-radius: 50%;
   margin-bottom: 7%;
@@ -75,7 +76,7 @@ ul {
 }
 
 .menu-link {
-  background-color: var(--very-dark-blue);
+  background-color: var(--bg-dark-blue);
   position: relative;
   display: block;
   width: 50px;
@@ -123,7 +124,7 @@ ul {
   margin-bottom: 10%;
 }
 .text {
-  background-color: var(--very-dark-blue);
+  background-color: var(--bg-dark-blue);
   border-radius: 30px;
   padding: 6px 20px;
   color: var(--primary);
