@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5rem;
+  color: var(--medium-grey);
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  place-items: center;
+  overflow: hidden;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--white);
+}
+a {
+  text-decoration: none;
+  color: var(--medium-grey);
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-blue);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 386px;
+  text-align: left;
+  margin: 7% auto;
+}
+
+/*Rating state start */
+.box-rate {
+  display: block;
+}
+
+.box-logo {
+  background-color: var(--very-dark-blue);
+  padding: 3%;
+  border-radius: 50%;
+  margin-bottom: 7%;
+}
+.heading {
+  margin-bottom: 3%;
+}
+.box-text {
+  margin-bottom: 7%;
+}
+
+.menu-link {
+  background-color: var(--very-dark-blue);
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  padding-top: 28%;
+  &:hover {
+    background-color: var(--light-grey);
+    color: var(--white);
+  }
+  &:focus {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}
+
+.btn {
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 0;
+  color: var(--white);
+  background-color: var(--primary);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    background-color: var(--white);
+    color: var(--primary);
+  }
+}
+
+/*Thank you state start*/
+
+.box-center {
+  text-align: center;
+  display: none;
+}
+.box-center-img {
+  width: 40%;
+  margin: 0 auto 10% auto;
+}
+.box-result {
+  margin-bottom: 10%;
+}
+.text {
+  background-color: var(--very-dark-blue);
+  border-radius: 30px;
+  padding: 6px 20px;
+  color: var(--primary);
+}
+
+@media (max-width: 375px) {
+  .menu-link {
+    width: 40px;
+    height: 40px;
+    padding-top: 23%;
+    font-size: 14px;
+  }
+}
